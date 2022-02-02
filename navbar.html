@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        li{
+            list-style-type: none;
+            display: inline;
+            margin: 10px;
+            padding: 10px;
+            border-right: 2px solid black;
+            min-width: 100px;
+            text-align: center;
+        }
+        .bg{
+            background-color: gray;
+            height: 40px;
+            display: flex;
+            align-items: center;
+        }
+        a{
+            text-decoration: none;
+          
+        }
+        @media screen and (max-width:600px){
+            .bg{
+                /* flex-direction: column; */
+                display: block;
+                height: 150px;
+            }
+            a{
+                display: block;
+                border-bottom: 2px solid black;
+            }
+            li{
+                border-right: none;
+                
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="bg">
+       
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About Me</a></li>
+    <li><a href="#">Contact</a></li>
+    <li><a href="#">Page</a></li>
+    </div>
+
+</body>
+</html>
